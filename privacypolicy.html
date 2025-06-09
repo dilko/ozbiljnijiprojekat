@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8">
+  <title>Privacy Policy – The Great Deal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 60px;
+      padding: 20px 0;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
+
+<header>
   <h1>Privacy Policy</h1>
-  <p>This tool is for internal use only by The Great Deal Co. We access public Facebook Ad Library data for research and analysis. No user data is collected, stored, or shared.</p>
+</header>
+
+<main>
+  <p>
+    This tool is intended for internal use only by <strong>The Great Deal Co.</strong>. We access public data
+    available from the <a href="https://www.facebook.com/ads/library/" target="_blank" rel="noopener noreferrer">
+    Facebook Ad Library</a> strictly for the purpose of research and advertising analysis.
+  </p>
+
+  <p>
+    No personal user data is collected, stored, or shared. We do not use cookies, analytics, or any tracking
+    technology. Your interaction with this tool remains entirely anonymous.
+  </p>
+
+  <p>
+    If you have questions or concerns regarding privacy, please reach out via email:
+    <a href="mailto:dilan.dobardzic@thegreatdeal.live">dilan.dobardzic@thegreatdeal.live</a>
+  </p>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> The Great Deal Co.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
