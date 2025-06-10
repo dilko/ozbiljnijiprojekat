@@ -8,6 +8,7 @@
   <meta property="og:description" content="Read our privacy policy for The Great Deal ad research project." />
   <title>Privacy Policy | The Great Deal</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <style>
     :root {
       --primary: #1f2937;
@@ -18,9 +19,9 @@
     }
 
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     body {
@@ -33,19 +34,23 @@
     header {
       background-color: var(--primary);
       color: white;
-      padding: 2rem 1rem 1.5rem;
+      padding: 2rem 1rem 1.5rem 1rem;
       text-align: center;
+      position: relative;
     }
 
     .logo {
       display: block;
-      margin: 0 auto 0.5rem auto;
+      margin: 0 auto 0.75rem auto;
       max-height: 300px;
+      animation: fadeIn 1.5s ease;
+      cursor: pointer;
     }
 
-    .tagline {
+    header p {
       font-size: 1.1rem;
       color: #d1d5db;
+      animation: slideIn 1s ease;
     }
 
     main {
@@ -79,6 +84,22 @@
       font-size: 0.875rem;
       color: var(--muted);
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
@@ -86,7 +107,7 @@
     <a href="index.html">
       <img src="logo.png" alt="The Great Deal Logo" class="logo" />
     </a>
-    <p class="tagline">Creative Ad Research & Analysis</p>
+    <p>Creative Ad Research & Analysis</p>
   </header>
 
   <main>
